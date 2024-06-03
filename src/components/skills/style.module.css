@@ -1,0 +1,49 @@
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px 12px;
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    border-radius: 12px;
+
+    &._dark {
+        color: var(--color-blue-on-dark);
+        border-color: var(--color-blue-on-dark);
+    }
+}
+
+.button-wrapper {
+    width: 100%;
+}
+
+.button {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-gray-on-dark);
+    text-decoration: underline;
+}
+
+@media (min-width: 1080px) {
+    .button-wrapper {
+        display: flex;
+        align-items: flex-end;
+        width: auto;
+    }
+}
+
+@media print {
+    .skill {
+        display: block !important;
+    }
+
+    .button-wrapper {
+        display: none;
+    }
+}

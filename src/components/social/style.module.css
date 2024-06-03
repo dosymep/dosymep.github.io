@@ -1,0 +1,12 @@
+.social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 1080px) {
+    .social {
+        padding-bottom: 80px;
+    }
+}

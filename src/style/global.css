@@ -1,0 +1,64 @@
+:root {
+    font-family: Roboto, Inter, sans-serif;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 375px;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    padding: 0;
+    font-family: inherit;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+}
+
+.wrapper {
+    max-width: 287px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+        max-width: 740px;
+    }
+}

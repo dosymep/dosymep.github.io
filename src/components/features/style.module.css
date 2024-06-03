@@ -1,0 +1,38 @@
+.features {
+    max-width: 740px;
+    width: 100%;
+    padding: 0 16px 40px;
+    margin: 0 auto;
+}
+
+.experience {
+    margin-bottom: 20px;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.location,
+.description,
+.subtitle {
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    font-weight: 500;
+}
+
+.position {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.date {
+    color: var(--color-gray-on-dark);
+}

@@ -1,0 +1,10 @@
+:root {
+    /* palette */
+    --color-white: #FFFFFF;
+    --color-dark: #121212;
+    --color-dark-light: #1e1e1e;
+    --color-gray-on-dark: #A0A0A0;
+    --color-fon: #FAFAFA;
+    --color-blue: #124680;
+    --color-blue-on-dark: #93C6E6;
+}
