@@ -13,13 +13,19 @@ export default function Features() {
             experience: 'Experience',
             experienceList: [
                 {
+                    location: 'pyRevitLabs"',
+                    position: 'Core Contributor',
+                    description: 'Contribute as a core member to the development of pyRevit',
+                    date: 'April 2021 - Present'
+                },
+                {
                     location: 'JSC "A101 DEVELOPMENT", Moscow',
                     position: 'Senior Software Engineer',
                     description: 'Development of a BIM platform for Autodesk Revit',
                     date: 'April 2021 - Present'
                 },
                 {
-                    location: 'JSC ONIIP (Omsk Scientific-Research Institute of Instrument Engineering)',
+                    location: 'JSC ONIIP (Omsk Scientific-Research Institute of Instrument Engineering), Omsk',
                     position: 'Software Engineer',
                     description: 'Software Integration. LOODSMAN:PLM, KOMPAS-3D, Altium Designer, PCAD 2002',
                     date: 'April 2016 - April 2021'
@@ -43,6 +49,12 @@ export default function Features() {
             skills: 'Навыки',
             experience: 'Опыт работы',
             experienceList: [
+                {
+                    location: 'pyRevitLabs',
+                    position: 'Ключевой участник',
+                    description: 'Участвую в развитии проекта pyRevit в качестве ключевого участника',
+                    date: 'Апрель 2021 — н.в.'
+                },
                 {
                     location: 'A101, Москва',
                     position: 'Старший разработчик',
