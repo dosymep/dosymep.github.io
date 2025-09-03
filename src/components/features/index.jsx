@@ -13,7 +13,7 @@ export default function Features() {
             experience: 'Experience',
             experienceList: [
                 {
-                    location: 'pyRevitLabs"',
+                    location: 'pyRevitLabs',
                     position: 'Core Contributor',
                     description: 'Contribute as a core member to the development of pyRevit',
                     date: 'April 2021 - Present'
