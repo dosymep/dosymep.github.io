@@ -1,0 +1,188 @@
+{
+  "en": {
+    "page": {
+      "title": "Olzhas Biseuv"
+    },
+    "header": {
+      "logoAlt": "dosymep",
+      "switchLanguage": "RU",
+      "lightTheme": "Switch to the light theme",
+      "darkTheme": "Switch to the dark theme"
+    },
+    "about": {
+      "hi": "Hi, I'm",
+      "name": "Olzhas Biseuv",
+      "description": "Senior C# Software Engineer. In my free time, I contribute to open-source projects. I create libraries and tools to help people work with Autodesk Revit.",
+      "location": "Based in Omsk, Russia (GMT+6)",
+      "button": "Download resume"
+    },
+    "features": {
+      "skills": "Skills",
+      "experience": "Experience",
+      "experienceList": [
+        {
+          "location": "pyRevitLabs",
+          "position": "Core Contributor",
+          "description": "Contribute to the development of pyRevit as a core contributor",
+          "date": "April 2021 – Present"
+        },
+        {
+          "location": "JSC \"A101 DEVELOPMENT\", Moscow",
+          "position": "Senior Software Engineer",
+          "description": "Develop a BIM platform for Autodesk Revit",
+          "date": "April 2021 – Present"
+        },
+        {
+          "location": "JSC ONIIP (Omsk Research Institute of Instrument Engineering), Omsk",
+          "position": "Software Engineer",
+          "description": "Software integration: LOODSMAN:PLM, KOMPAS-3D, Altium Designer, PCAD 2002",
+          "date": "April 2016 – April 2021"
+        }
+      ],
+      "education": "Education",
+      "educationList": [
+        {
+          "position": "Master's degree",
+          "subtitle": "Information Systems and Technologies",
+          "date": "2015–2017",
+          "description": "Omsk State Transport University (OSTU), Omsk"
+        },
+        {
+          "position": "Bachelor's degree",
+          "subtitle": "Information Systems and Technologies",
+          "date": "2011–2015",
+          "description": "Omsk State Transport University (OSTU), Omsk"
+        }
+      ]
+    },
+    "skills": {
+      "items": [
+        "C#",
+        "GitHub",
+        "DevExpress",
+        ".NET Framework",
+        "Windows Forms",
+        "TFS",
+        "LOODSMAN:PLM",
+        "Altium Designer",
+        "KOMPAS-3D",
+        "PCAD 2002",
+        "Microsoft Visual Studio",
+        "BIM",
+        "Autodesk Revit",
+        "Autodesk Navisworks",
+        "WPF",
+        "IronPython",
+        "Rider",
+        "NUKE",
+        "GitHub Actions",
+        "CI/CD"
+      ],
+      "show": "Show more",
+      "hide": "Hide"
+    },
+    "social": {
+      "telegram": "Telegram",
+      "hh": "HeadHunter",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "mail": "Email"
+    },
+    "footer": {
+      "copyright": "Olzhas Biseuv · Since 2024"
+    }
+  },
+  "ru": {
+    "page": {
+      "title": "Олжас Бисеув"
+    },
+    "header": {
+      "logoAlt": "dosymep",
+      "switchLanguage": "ENG",
+      "lightTheme": "Включить светлую тему",
+      "darkTheme": "Включить тёмную тему"
+    },
+    "about": {
+      "hi": "Привет, я",
+      "name": "Олжас Бисеув",
+      "description": "Старший разработчик на C#. В свободное время участвую в проектах с открытым исходным кодом. Создаю библиотеки и инструменты для работы с Autodesk Revit.",
+      "location": "Живу в Омске, Россия (GMT+6)",
+      "button": "Скачать резюме"
+    },
+    "features": {
+      "skills": "Навыки",
+      "experience": "Опыт работы",
+      "experienceList": [
+        {
+          "location": "pyRevitLabs",
+          "position": "Ключевой участник",
+          "description": "Участвую в разработке pyRevit в качестве ключевого участника",
+          "date": "апрель 2021 — настоящее время"
+        },
+        {
+          "location": "A101, Москва",
+          "position": "Старший разработчик",
+          "description": "Разработка BIM-платформы для Autodesk Revit",
+          "date": "апрель 2021 — настоящее время"
+        },
+        {
+          "location": "АО «Омский НИИ приборостроения», Омск",
+          "position": "Инженер-программист",
+          "description": "Интеграция программного обеспечения: ЛОЦМАН:PLM, КОМПАС-3D, Altium Designer, PCAD 2002",
+          "date": "апрель 2016 — апрель 2021"
+        }
+      ],
+      "education": "Образование",
+      "educationList": [
+        {
+          "position": "Магистратура",
+          "subtitle": "Информационные системы и технологии",
+          "description": "ОмГУПС, Омск",
+          "date": "2015–2017"
+        },
+        {
+          "position": "Бакалавриат",
+          "subtitle": "Информационные системы и технологии",
+          "description": "ОмГУПС, Омск",
+          "date": "2011–2015"
+        }
+      ]
+    },
+    "skills": {
+      "items": [
+        "C#",
+        "GitHub",
+        "DevExpress",
+        ".NET Framework",
+        "Windows Forms",
+        "TFS",
+        "ЛОЦМАН:PLM",
+        "Altium Designer",
+        "КОМПАС-3D",
+        "PCAD 2002",
+        "Microsoft Visual Studio",
+        "BIM",
+        "Autodesk Revit",
+        "Autodesk Navisworks",
+        "WPF",
+        "IronPython",
+        "Rider",
+        "NUKE",
+        "GitHub Actions",
+        "CI/CD"
+      ],
+      "show": "Показать ещё",
+      "hide": "Скрыть"
+    },
+    "social": {
+      "telegram": "Telegram",
+      "hh": "HeadHunter",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "mail": "Электронная почта"
+    },
+    "footer": {
+      "copyright": "Олжас Бисеув · С 2024 года"
+    }
+  }
+}

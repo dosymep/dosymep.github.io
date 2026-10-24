@@ -1,24 +1,33 @@
-import { useEffect, useMemo, useState } from 'preact/hooks'
+import { useEffect, useLayoutEffect, useMemo, useState } from 'preact/hooks'
 import { createContext } from 'preact'
+import translations from '../../resources/translations.json'
+import { loadSettings, saveSettings, toggleSetting } from '../../lib/settings.js'
 
 export const SettingsContext = createContext()
 
 export function Settings({ children }) {
-    const SETTINGS_STORAGE_NAME = 'settings'
-    const settingsStorage = localStorage.getItem(SETTINGS_STORAGE_NAME)
-
-    const [dark, setDark] = useState(JSON.parse(settingsStorage)?.dark || false)
-    const [eng, setEng] = useState(JSON.parse(settingsStorage)?.eng || false)
-
-    const toggleDark = () => setDark(!dark)
-
-    const toggleEng = () => setEng(!eng)
+    const [preferences, setPreferences] = useState(() => loadSettings(window))
+    const { dark, eng, overrides } = preferences
+    const locale = eng ? 'en' : 'ru'
+    const content = translations[locale]
 
     const settings = useMemo(() => {
-        return { dark, toggleDark, eng, toggleEng }
-    }, [dark, eng])
+        return {
+            dark,
+            eng,
+            content,
+            toggleDark: () => setPreferences(current => toggleSetting(current, 'dark')),
+            toggleEng: () => setPreferences(current => toggleSetting(current, 'eng'))
+        }
+    }, [dark, eng, content])
 
-    useEffect(() => {
+    useLayoutEffect(() => {
+        document.documentElement.lang = locale
+        document.title = content.page.title
+    }, [locale, content])
+
+    useLayoutEffect(() => {
+        document.documentElement.style.setProperty('color-scheme', dark ? 'dark' : 'light')
         if (dark) {
             document.documentElement.style.setProperty('color', 'var(--color-white)')
             document.documentElement.style.setProperty('background-color', 'var(--color-dark)')
@@ -29,8 +38,8 @@ export function Settings({ children }) {
     }, [dark])
 
     useEffect(() => {
-        localStorage.setItem(SETTINGS_STORAGE_NAME, JSON.stringify({ dark, eng }))
-    }, [dark, eng])
+        saveSettings(overrides, window)
+    }, [overrides])
 
     return (
         <SettingsContext.Provider value={settings}>
