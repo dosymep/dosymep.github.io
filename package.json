@@ -1,19 +1,29 @@
 {
-  "name": "olzhas-biseuv",
+  "name": "cv",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
-    "preact": "^10.19.6"
+    "preact": "^11.0.2"
   },
   "devDependencies": {
-    "@preact/preset-vite": "^2.8.2",
-    "vite": "^5.2.0",
-    "vite-plugin-svgr": "^4.2.0"
+    "@babel/core": "^7.29.7",
+    "@preact/preset-vite": "^2.10.6",
+    "@testing-library/preact": "^3.2.6",
+    "jsdom": "^30.1.3",
+    "vite": "^8.3.5",
+    "vite-plugin-svgr": "^5.2.0",
+    "vitest": "^5.0.5"
+  },
+  "packageManager": "yarn@4.18.1",
+  "engines": {
+    "node": "^24.15.0 || >=26.0.0"
   }
 }
