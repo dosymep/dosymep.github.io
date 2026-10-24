@@ -4,7 +4,7 @@ import { SettingsContext } from '../settings'
 import Icon from '../icon/index.jsx'
 
 export default function Social() {
-    const { dark } = useContext(SettingsContext)
+    const { dark, content } = useContext(SettingsContext)
 
     const links = useMemo(() => {
         return [
@@ -14,6 +14,7 @@ export default function Social() {
             },
             {
                 icon: dark ? 'hh' : 'hh-fill',
+                label: 'hh',
                 url: 'https://omsk.hh.ru/resume/5dbf363bff07664abf0039ed1f3874556e4272'
             },
             {
@@ -36,7 +37,8 @@ export default function Social() {
             {links.map(link => (
                 <a
                     href={`${link.icon === 'mail' ? 'mailto:' : ''}${link.url}`}
-                    title={link.icon}
+                    title={content.social[link.label || link.icon]}
+                    aria-label={content.social[link.label || link.icon]}
                     target={link.icon === 'mail' ? '_self' : '_blank'}
                 >
                     <Icon name={link.icon} />
